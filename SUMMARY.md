@@ -8,7 +8,7 @@
   * [原始值和引用值](基础/原始值和引用值.md)
   * [reference](基础/reference.md)
   * [type cast](基础/type-cast.md)
-* [运算符](运算符.md)
+* [Operator](运算符.md)
   * [unary operator](.md/unary-operator.md)
 * [语句](语句.md)
 
