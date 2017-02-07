@@ -9,6 +9,6 @@
   * [reference](基础/reference.md)
   * [type cast](基础/type-cast.md)
 * [运算符](运算符.md)
-  * [unary operator](.md/unary-operator.md)
+  * unary operator
 * [语句](语句.md)
 
