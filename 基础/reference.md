@@ -8,8 +8,6 @@
 var o = new Object;
 ```
 
-
-
 Number对象
 
 * toFixed\(\)
@@ -28,38 +26,31 @@ alert(oNumberObject.toExponential(1));  //输出 "6.8e+1"
 
 > 指定输出的小数的位数
 
-
-
 String对象
 
 charAt\(\) 方法返回的是包含指定位置处的字符的字符串：
 
 ```js
 var oStringObject = new String("hello world");
-alert(oStringObject.charAt(1));	//输出 "e"
+alert(oStringObject.charAt(1));    //输出 "e"
 ```
 
 charCodeAt\(\) 得到的是字符的代码
-
-
 
 indexOf\(\) 方法是从字符串的开头（位置 0）开始检索字符串，而 lastIndexOf\(\) 方法则是从字符串的结尾开始检索子串。
 
 
 
-typeOf\(\) 和 instanceOf\(\)
+###### typeOf\(\) 和 instanceOf\(\)
 
-使用 typeof 运算符时采用**引用类型**存储值会出现一个问题，无论引用的是什么类型的对象，它都返回 "object"。  
-
+使用 typeof 运算符时采用**引用类型**存储值会出现一个问题，无论引用的是什么类型的对象，它都返回 "object"。
 
 ```js
 var oStringObject = new String("hello world");
-alert(oStringObject instanceof String);	//输出 "true"
+alert(oStringObject instanceof String);    //输出 "true"
 ```
 
 > 变量 oStringObject 是否为 String 对象的实例？
-
-
 
 
 
