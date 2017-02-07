@@ -11,5 +11,6 @@
 * [Operator](Operator.md)
   * [unary operator](Operator/unary-operator.md)
   * [bit operation](Operator/bit-operation.md)
+  * [boolean operation](Operator/boolean-operation.md)
 * [语句](语句.md)
 
