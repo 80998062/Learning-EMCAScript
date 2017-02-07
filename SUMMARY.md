@@ -10,6 +10,6 @@
   * [type cast](Basic/type-cast.md)
 * [Operator](Operator.md)
   * [unary operator](Operator/unary-operator.md)
-  * bit operation
+  * [bit operation](Operator/bit-operation.md)
 * [语句](语句.md)
 
