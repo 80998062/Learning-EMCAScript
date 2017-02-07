@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [基础](基础.md)
+* [Basic](Basic.md)
   * [变量](基础/变量.md)
   * [keyword](基础/keyword.md)
   * [reserved word](基础/reserved-word.md)
