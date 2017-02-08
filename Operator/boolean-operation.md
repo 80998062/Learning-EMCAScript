@@ -2,8 +2,6 @@
 
 **Boolean 运算符有三种：NOT、AND 和 OR。**
 
-
-
 ES中抽象操作ToBoolean的规则
 
 * Undefined : false
@@ -12,6 +10,10 @@ ES中抽象操作ToBoolean的规则
 * Number: +0,-0或者NaN 返回false
 * String: 空字符串 返回false
 * Object: true
+
+**NOT运算符:**
+
+> 如果运算数是undefined,报错
 
 
 
