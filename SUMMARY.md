@@ -14,4 +14,7 @@
   * [boolean operation](Operator/boolean-operation.md)
   * [equal operation](Operator/equal-operation.md)
 * [语句](语句.md)
+* [Function](function.md)
+  * [arguments](function/arguments.md)
+  * [function](function/function.md)
 
