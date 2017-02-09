@@ -17,4 +17,5 @@
 * [Function](function.md)
   * [arguments](function/arguments.md)
   * [function](function/function.md)
+  * [variable hoisting](function/variable-hoisting.md)
 
