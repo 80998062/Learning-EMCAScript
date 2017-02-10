@@ -26,5 +26,7 @@
   * [constructor](object-orient/constructor.md)
   * [string joint](object-orient/string-joint.md)
   * [refactor object](object-orient/refactor-object.md)
-* inherit mechanism
+* [inherit mechanism](inherit-mechanism.md)
+  * [concept](inherit-mechanism/concept.md)
+  * [usecase](inherit-mechanism/usecase.md)
 
