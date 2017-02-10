@@ -1,6 +1,6 @@
 ## 修改对象
 
-**`prototype` 属性不仅可以定义构造函数的属性和方法，还可以为本地对象添加属性和方法。**
+`prototype`** 属性不仅可以定义构造函数的属性和方法，还可以为本地对象添加属性和方法。**
 
 举个🌰:
 
@@ -9,10 +9,6 @@ Number.prototype.toHexString = function() {
   return this.toString(16);
 };
 ```
-
-
-
-
 
 **重命名已有方法:**
 
@@ -42,21 +38,41 @@ function sayHi(){
 console.log(sayHi.toString());
 ```
 
+
+
+> `toString() `指向的原始函数将被无用存储单元回收程序回收，因为它被完全废弃了。
+>
+> **没有能够恢复原始函数的方法**
+
+所以在覆盖原始方法前，比较安全的做法是**存储它的指针**，以便以后的使用。
+
+有时你甚至可能在新方法中调用原始方法：
+
+```js
+Function.prototype.originalToString = Function.prototype.toString;
+
+Function.prototype.toString = function(){
+  if (this.originalToString().length > 100) {
+      return "Function too long to display.";
+  } else {
+    return this.originalToString();
+  }    
+};
+```
+
 **添加方法:**
 
 ```js
 Array.prototype.indexOf = function (vItem) {
   for (var i=0; i<this.length; i++) {
     if (vItem == this[i]) {
-	  return i;
-	}
+      return i;
+    }
   }
 
   return -1;
 }
 ```
-
-
 
 > 对 Object 对象做任何改变，都会反应在**所有**本地对象上。
 
