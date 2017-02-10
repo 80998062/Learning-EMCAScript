@@ -29,4 +29,6 @@
 * [inherit mechanism](inherit-mechanism.md)
   * [concept](inherit-mechanism/concept.md)
   * [usecase](inherit-mechanism/usecase.md)
+* [DOM](dom.md)
+  * concept
 
