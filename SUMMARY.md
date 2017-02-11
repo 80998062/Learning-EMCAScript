@@ -30,5 +30,6 @@
   * [concept](inherit-mechanism/concept.md)
   * [usecase](inherit-mechanism/usecase.md)
 * [DOM](dom.md)
-  * concept
+  * [concept](dom/concept.md)
+  * [chores](dom/chores.md)
 

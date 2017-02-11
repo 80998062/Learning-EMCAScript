@@ -10,19 +10,13 @@
 * 标签名
 * 类名
 
-
-
 ```js
 var x = document.getElementById('intro');
 ```
 
-
-
 ```js
 var y = x.getElementByTagName('p');
 ```
-
-
 
 * 直接向html输出流写内容
 
@@ -31,12 +25,8 @@ document.write(Date())
 ```
 
 > 绝不要使用在文档**加载之后**使用 document.write\(\)。这会覆盖该文档。
-
-
-
+>
 > 同理,JavaScript中函数不要有返回值,也会覆盖整个文档
-
-
 
 * 改变 HTML 元素的内容
 
@@ -48,13 +38,36 @@ document.getElementById(id).innerHTML = new HTML
 >
 > 标签之内的内容吗?
 
-
-
 ### 改变HTML元素的属性
 
+```js
+document.getElementById(id).attribute = new value
+```
+
+举个🌰:
+
+```js
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="image" src="smiley.gif">
+
+<script>
+document.getElementById("image").src="landscape.jpg";
+</script>
+
+</body>
+</html>
+```
 
 
 
+### 改变HTML样式
+
+```js
+document.getElementById(id).style.property=new style
+```
 
 
 
