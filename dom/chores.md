@@ -16,3 +16,14 @@ document.all("abc").innerTEXT // 测试
 
 
 
+```js
+<div id="t"><div>lions,
+tigers</div><div style="visibility:hidden">and bears</div></div>
+```
+
+* innerText : `"lions, tigers"`
+
+* textContent: `"lions,\ntigersand bears"`
+
+
+
