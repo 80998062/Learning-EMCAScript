@@ -32,6 +32,6 @@
 * [DOM](dom.md)
   * [concept](dom/concept.md)
   * [chores](dom/chores.md)
-* Document
+* [Document](document.md)
   * [array](array.md)
 
