@@ -19,6 +19,8 @@
   * [function](function/function.md)
   * [scoping](function/scoping.md)
   * [variable hoisting](function/variable-hoisting.md)
+  * [closure](function/closure.md)
+  * [declaration](function/declaration.md)
 * [Object orient](object-orient.md)
   * [object application](object-orient/object-application.md)
   * [types](object-orient/types.md)

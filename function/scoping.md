@@ -2,20 +2,18 @@
 
 > To fully understand the concept of hoisting,first let's take a necessary detour to understand JavaScript's scoping
 
-
-
 举个🌰:
 
 ```c
 #include <stdio.h>
 int main() {
-	int x = 1;
-	printf("%d, ", x); // 1
-	if (1) {
-		int x = 2;
-		printf("%d, ", x); // 2
-	}
-	printf("%d\n", x); // 1
+    int x = 1;
+    printf("%d, ", x); // 1
+    if (1) {
+        int x = 2;
+        printf("%d, ", x); // 2
+    }
+    printf("%d\n", x); // 1
 }
 ```
 
@@ -25,27 +23,21 @@ output:
 
 C family language:**blocking-level scope**
 
-
-
 而在JavaScript中:
 
 ```js
 var x = 1;
 console.log(x); // 1
 if (true) {
-	var x = 2;
-	console.log(x); // 2
+    var x = 2;
+    console.log(x); // 2
 }
 console.log(x); // 2
 ```
 
-
-
 JavaScript: **function-level scope**
 
 > 比如一个`if`语句,不会创建一个新的**scope**
-
-
 
 If you must create** temporary scopes** within a function, do the following:
 
@@ -53,18 +45,16 @@ If you must create** temporary scopes** within a function, do the following:
 
 ```js
 function foo() {
-	var x = 1;
-	if (x) {
-		(function () {
-			var x = 2;
-			// some other code
-		}());
-	}
-	// x is still 1.
+    var x = 1;
+    if (x) {
+        (function () {
+            var x = 2;
+            // some other code
+        }());
+    }
+    // x is still 1.
 }
 ```
-
-
 
 ## Declarations, Names, and Hoisting {#declarations_names_and_hoisting}
 
@@ -87,8 +77,8 @@ In JavaScript, a name enters a scope in one of four basic ways:
 
 ```js
 function foo() {
-	bar();
-	var x = 1;
+    bar();
+    var x = 1;
 }
 ```
 
@@ -96,34 +86,48 @@ function foo() {
 
 ```js
 function foo() {
-	var x;
-	bar();
-	x = 1;
+    var x;
+    bar();
+    x = 1;
 }
 ```
 
 **It turns out that it doesn’t matter whether the line that contains the declaration would ever be executed?**
 
- The following two functions are equivalent:
+The following two functions are equivalent:
 
 ```js
 function foo() {
-	if (false) {
-		var x = 1;
-	}
-	return;
-	var y = 1;
+    if (false) {
+        var x = 1;
+    }
+    return;
+    var y = 1;
 }
 
 function foo() {
-	var x, y;
-	if (false) {
-		x = 1;
-	}
-	return;
-	y = 1;
+    var x, y;
+    if (false) {
+        x = 1;
+    }
+    return;
+    y = 1;
 }
 ```
+
+
+
+在JavaScript中，我们可以将作用域定义为一套规则,这套规则用来管理引擎如何在当前作用域以及嵌套的子作用域中**根据标识符名称进行变量查找**。
+
+
+
+> 这里的标识符，指的是变量名或者函数名
+
+JavaScript中只有全局作用域与函数作用域
+
+
+
+
 
 
 
