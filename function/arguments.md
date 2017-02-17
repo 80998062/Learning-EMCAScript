@@ -21,13 +21,7 @@ doAdd(40, 20);    //输出 "60"
 >
 > 注释：与其他程序设计语言不同，ECMAScript **不会验证传递给函数的参数个数是否等于函数定义的参数个数**。开发者定义的函数都可以接受任意个数的参数（根据 Netscape 的文档，最多可接受 **255** 个），而不会引发任何错误。任何遗漏的参数都会以 **undefined** 传递给函数，多余的函数将**忽略**。
 
-
-
 ### 按值传递和按引用传递
-
-
-
-
 
 ### 动态原型方法
 
@@ -37,12 +31,12 @@ function Car(sColor,iDoors,iMpg) {
   this.doors = iDoors;
   this.mpg = iMpg;
   this.drivers = new Array("Mike","John");
-  
+
   if (typeof Car._initialized == "undefined") {
     Car.prototype.showColor = function() {
       alert(this.color);
     };
-	
+
     Car._initialized = true;
   }
 }
