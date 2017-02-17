@@ -36,4 +36,5 @@
   * [chores](dom/chores.md)
 * [Document](document.md)
   * [array](array.md)
+* [Module](module.md)
 
