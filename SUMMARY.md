@@ -39,4 +39,5 @@
 * [Module](module.md)
 * ES6
   * [const&let](constandlet.md)
+  * [Destructuring](destructuring.md)
 
