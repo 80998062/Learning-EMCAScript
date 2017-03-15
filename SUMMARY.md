@@ -37,4 +37,6 @@
 * [Document](document.md)
   * [array](array.md)
 * [Module](module.md)
+* ES6
+  * [const&let](constandlet.md)
 
