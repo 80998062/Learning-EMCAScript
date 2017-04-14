@@ -37,7 +37,8 @@
 * [Document](document.md)
   * [array](array.md)
 * [Module](module.md)
-* ES6
+* [ES6](es6.md)
   * [const&let](constandlet.md)
   * [Destructuring](destructuring.md)
+  * [coding style](coding-style.md)
 
