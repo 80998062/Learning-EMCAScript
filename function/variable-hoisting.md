@@ -4,27 +4,23 @@
 
 Keys:
 
-- *hoisted declaration*
-- *assigment stays put*
-- *function declaration prior to variable declaration*
-
-
+* _hoisted declaration_
+* _assigment stays put_
+* _function declaration prior to variable declaration_
 
 举个🌰:
 
 ```javascript
 // Function声明会被提升至最上面
 function a() {
-    function foo() {
-    }
+    function foo() {}
     var foo;  // (1) 变量声明在后
     console.log(foo); // (2) 输出 [Function: foo] 
 }
 
 function b() {
     var bar;
-    function bar() {
-    }
+    function bar() {}
     console.log(bar);
 }
 
@@ -35,10 +31,6 @@ b();
 [Function: foo] 
 [Function: bar]
 ```
-
-
-
-
 
 ## 变量对象和活动对象
 
@@ -55,8 +47,4 @@ b();
 ## 全局上下文的变量对象
 
 以浏览器中为例，全局对象为`window`。
-
-
-
-
 
